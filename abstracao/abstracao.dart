@@ -1,0 +1,22 @@
+/**
+ abstração é o principio da programação orientada a objetos (POO) que 
+ permite ocultar os detalhes internos e mostrar apenas o que é relevante
+ para o uso de uma classe ou método.
+ É como dirigir um carro: você só precisa saber como usar o volante, pedais e marcha. Mas não
+ IMPORTANTE SOBRE CLASSES ABSTRATAS
+ - não pode ser instanciada diretamente
+ - serve como modelo para outras classes
+ - pode ter métodos implementados e métodos sem implementação (abstratos)
+ */
+
+ import 'Gato.dart';
+import 'Cachorro.dart';
+
+void main(List<String> args) {
+  Cachorro cachorro = new Cachorro();
+  cachorro.emitirSom();
+  cachorro.dormir();
+  Gato gato = new Gato();
+  gato.emitirSom();
+  gato.dormir();
+}
