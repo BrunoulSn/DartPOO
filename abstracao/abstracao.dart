@@ -9,7 +9,9 @@
  - pode ter métodos implementados e métodos sem implementação (abstratos)
  */
 
- import 'Gato.dart';
+ import 'AbstracaoPagamento/PagamentoCartao.dart';
+import 'AbstracaoPagamento/PagamentoPix.dart';
+import 'Gato.dart';
 import 'Cachorro.dart';
 
 void main(List<String> args) {
@@ -19,4 +21,21 @@ void main(List<String> args) {
   Gato gato = new Gato();
   gato.emitirSom();
   gato.dormir();
-}
+
+
+
+  /*Usando interface através do implements
+  quando usamos o implements, a classe 
+  é obrigada a implementar tudo que existe  na classe abstrata,
+   incluindo métodos ja implementados  
+  Exemplo com meios de pagamentos
+  */
+
+PagamentoPix pix = new PagamentoPix(100);
+pix.RealizarPagamento();
+pix.EmitirComprovante();
+
+PagamentoCartao cartao = new PagamentoCartao(1000, 10);
+cartao.RealizarPagamento();
+cartao.EmitirComprovante();
+  }
