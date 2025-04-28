@@ -1,6 +1,6 @@
-import 'Aluno.dart';
-import 'Cachorro.dart';
-import 'Gato.dart';
+import 'Exemplo com Pessoa/Aluno.dart';
+import 'Exemplo com Animal/Cachorro.dart';
+import 'Exemplo com Animal/Gato.dart';
 
 /**
 herança é um dos pilares da programação orientada a objetos (POO).

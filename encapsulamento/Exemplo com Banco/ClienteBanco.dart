@@ -1,23 +1,23 @@
-import 'dart:ffi';
+
 
 class ClienteBanco {
 
   String _nomeCliente='';
   double _saldoCliente=0;
 
-  void SetSaldo(double dinheiro){
+  set Saldo(double dinheiro){
     _saldoCliente=dinheiro;
   }
 
-  double GetSaldo(){
+  double get Saldo{
     return _saldoCliente;
   }
 
-  void SetNomeCliente(String nome){
+   set NomeCliente(String nome){
     _nomeCliente=nome;
   }
 
-  String GetNomeCliente()  {
+  String get NomeCliente{
     return _nomeCliente;
   }
 }
