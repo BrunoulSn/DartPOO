@@ -11,8 +11,8 @@
 
  import 'AbstracaoPagamento/PagamentoCartao.dart';
 import 'AbstracaoPagamento/PagamentoPix.dart';
-import 'Gato.dart';
-import 'Cachorro.dart';
+import 'Exemplo com Animal/Cachorro.dart';
+import 'Exemplo com Animal/Gato.dart';
 
 void main(List<String> args) {
   Cachorro cachorro = new Cachorro();
