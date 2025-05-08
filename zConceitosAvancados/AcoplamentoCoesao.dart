@@ -36,3 +36,9 @@ class Autenticador {
     print('Usuário autenticado');
   }
 }
+class EnviarEmail {
+  void enviarEmail() {
+    // Envia o relatório por email
+    print('Relatório enviado por email');
+  }
+}
